@@ -1,0 +1,58 @@
+/* Camera specific styles */
+#video {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #000;
+    /* No transform needed for rear camera */
+}
+
+#capture {
+    display: none;
+    margin: 10px 0;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#capture:hover {
+    background-color: #d32f2f;
+}
+
+.camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.camera-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.switch-camera {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.switch-camera:hover {
+    background-color: #0b7dda;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #video {
+        max-width: 100%;
+    }
+}
