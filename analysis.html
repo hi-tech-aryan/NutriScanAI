@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScanAI - Dish Analysis</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dish Analysis</h1>
+    </header>
+    <main>
+        <div class="analysis-container">
+            <div class="dish-header">
+                <h2 id="dish-title">Pasta Carbonara</h2>
+                <div id="health-score" class="score-healthy">
+                    <i class="fas fa-heart"></i> Healthy
+                </div>
+            </div>
+            
+            <div class="dish-image-container">
+                <img id="dish-image" src="../assets/placeholder-food.jpg" alt="Dish Image">
+            </div>
+            
+            <div class="nutrition-chart-container">
+                <canvas id="nutrition-chart"></canvas>
+            </div>
+            
+            <div class="nutrition-facts">
+                <div class="fact-box">
+                    <span class="fact-value">650</span>
+                    <span class="fact-label">Calories</span>
+                </div>
+                <div class="fact-box">
+                    <span class="fact-value">32g</span>
+                    <span class="fact-label">Protein</span>
+                </div>
+                <div class="fact-box">
+                    <span class="fact-value">45g</span>
+                    <span class="fact-label">Carbs</span>
+                </div>
+                <div class="fact-box">
+                    <span class="fact-value">28g</span>
+                    <span class="fact-label">Fats</span>
+                </div>
+            </div>
+            
+            <div class="alerts-section">
+                <h3><i class="fas fa-exclamation-triangle"></i> Alerts</h3>
+                <ul class="alerts-list">
+                    <li class="alert-high-sodium">High Sodium Content</li>
+                    <li class="alert-gluten">Contains Gluten</li>
+                </ul>
+            </div>
+            
+            <div class="alternatives-section">
+                <h3><i class="fas fa-lightbulb"></i> Suggested Alternatives</h3>
+                <ul class="alternatives-list">
+                    <li>Whole wheat pasta</li>
+                    <li>Turkey bacon instead of pancetta</li>
+                    <li>Low-fat milk instead of cream</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="../js/nutrition.js"></script>
+</body>
+</html>
