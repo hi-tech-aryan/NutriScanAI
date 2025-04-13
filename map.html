@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScanAI - Hunger Relief Centers</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/map.css">
+    <script src="../js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hunger Relief Centers</h1>
+        <div class="map-controls">
+            <button id="locate-me"><i class="fas fa-location-arrow"></i> Locate Me</button>
+            <div class="search-box">
+                <input type="text" id="location-search" placeholder="Search location...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="map"></div>
+        <div id="location-list">
+            <h3>Nearby Food Banks</h3>
+            <ul id="locations">
+                <!-- Locations will be populated by JavaScript -->
+                <li class="location-item">
+                    <h4>Community Food Share</h4>
+                    <p>0.5 miles away</p>
+                    <p>Open until 6:00 PM</p>
+                </li>
+                <li class="location-item">
+                    <h4>Hope Kitchen</h4>
+                    <p>1.2 miles away</p>
+                    <p>Open until 7:30 PM</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
