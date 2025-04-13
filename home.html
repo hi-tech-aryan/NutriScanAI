@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScanAI - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/camera.css">
+</head>
+<body>
+    <header>
+        <h1>NutriScanAI</h1>
+    </header>
+    <main class="card-layout">
+        <div class="card">
+            <button id="scan-dish" class="primary-btn">📷 Scan Dish</button>
+            <video id="video" width="300" height="200" autoplay></video>
+            <button id="capture" class="secondary-btn">Capture</button>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+        <div class="card">
+            <div class="search-container">
+                <input type="text" id="dish-name" placeholder="Enter Dish Name" autocomplete="off">
+                <div id="suggestions" class="suggestions-dropdown"></div>
+            </div>
+            <button id="analyze-btn" class="secondary-btn">Analyze</button>
+        </div>
+        <div class="card">
+            <button id="view-history">📊 View History</button>
+        </div>
+        <div class="card">
+            <button id="hunger-relief">🗺️ Hunger Relief Centers</button>
+        </div>
+        <div class="card">
+            <button id="profile-btn" class="secondary-btn">👤 Profile</button>
+        </div>
+    </main>
+    <script src="js/test.js"></script>
+</body>
+</html>
+</create_file>
